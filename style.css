@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
+
+:root {
+
+
+    --font-logo: 'Lato';
+    --font-txt: 'Georgia';
+    --font-txt2: 'Arial';
+    --font-txt3: 'Georgia';
+
+    /** cores **/
+
+    --cor-fundo: #00000070;
+    --cor-font: #ffffff;
+   
+
+
+    --font-size-txt: 1.6rem;
+    --font-size-title: 3rem;
+    --font-size-footer: 90%;
+    --font-size-lable: 1rem;
+
+
+}
+
+body {
+    font-family: var(--font-size-txt);
+    line-height: 100%;
+    letter-spacing: 5%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #131426;
+
+}
+
+
+header {
+
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    font-size: var(--font-size-title);
+    background-color: var(--cor-fundo);
+    border: 1px 5px solid var(--cor-font);
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 300px;
+    
+    
+}
+
+#titulo-principal {
+    
+    text-align: center;
+    font-family: var(--font-logo);
+    color: var(--cor-font);
+    line-height: 75%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+    
+}
+
+main {
+
+    margin: auto;
+    width: 60%;
+    font-family: var(--font-txt);
+    max-width: 800px;
+    min-width: 300px;
+    
+
+}
+
+.container {
+
+    font-size: var(--font-size-txt);
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--cor-font);
+    padding: 1%;
+    border: 1px 5px solid var(--cor-font);
+   
+
+}
+
+.container-conteudo {
+    
+    margin: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+   
+}
+
+select {
+
+    height: 35px;
+    width: 23%;
+    font-family: var(--font-txt2);
+    letter-spacing: 1px;
+    
+}
+
+option select {
+
+    height: 35px;
+    width: 15%;
+    font-family: var(--font-txt2);
+    letter-spacing: 2px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: black;
+    color: #ffffff;
+    transition: all 0.1s ease-in-out;
+}
+
+.lable-msg {
+
+    font-size: var(--font-size-lable);
+    line-height: 100%;
+    letter-spacing: 5%;
+    position: relative;
+    display: grid;
+    margin-bottom: 2%;
+}
+
+.radio-button {
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 16px;
+}
+
+.btn-cod-ou-desc {
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 35px;
+    width: 40%;
+    font-family: var(--font-txt2);
+    letter-spacing: 2px;
+
+}
+
+
+#divEscondida {
+    display: none;
+}
+
+.msg {
+
+    display: grid; 
+    margin-bottom: 2%;
+    padding: 15px;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-txt2);
+    
+}
+
+.passo {
+    display: flex; 
+    margin-bottom: 2%;
+    padding: 2px;
+    margin-top: 10px;
+    width: 25%;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    font-family: var(--font-txt2);
+}
+
+@media (max-width:800px){
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+}

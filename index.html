@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codificador</title>
+
+    <link rel="stylesheet" href="style.css".css>
+
+   
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1 id="titulo-principal">Codificador</h1>
+
+    </header>
+  
+
+    <main>
+    
+
+        <div class="container">
+
+            <div class="container-conteudo">
+
+                <div class="tipo-de-cod" class="cod">
+
+                    <h3>Criptografe seu texto!</h3>
+
+                    <select name="escolha-cod" id="cod-escolhido"> 
+                        <option value="select" id="opção-selecione" disabled selected>Selecione</option> 
+                        
+                        <option value="cifraCesar" id="opção-cifra">Cifra de César</option>
+                        <option value="base.64" id="opção-base">Base64</option>
+                    </select>
+
+                </div>
+
+                <div id="divEscondida">
+                    <h4>Qtd de Passos:</h3>
+                        <lable id="lable-passo" class="lable-msg">Passo: </lable>
+                        <input id="passo" type= "number" class="passo" min=1 max=26  placeholder="1-25">
+                
+                </div>
+                
+                <section class="texto-escondido"> 
+                    <h3 alt="Conjunto de técnicas para proteger uma informação entre o emissor e receptor.">Criptografia</h3>
+                    <lable id="lable-principal" class="lable-msg">Texto: </lable>
+                    <input id="msg-inicio" class="msg" placeholder="insira seu texto">
+                </section>
+
+              
+                <div class="radio-button">
+                      <input type="radio" name="radioInput" class ="radio-input" id="codificar" value="codificar">
+                      <label for="codificar">Codificar</label>
+                </div>
+        
+                <div class="radio-button">
+                      <input type="radio" name ="radioInput" class ="radio-input" id="decodificar" value="decodificar">
+                    <label for="decodificar">Decodificar</label> 
+                    
+                   
+                </div>
+
+
+                
+                
+                <div class="btns">
+                    <button type="submit" class="btn-cod-ou-desc" id="btn-codificar">Codificar</button>
+                </div>
+         
+
+                <section class="texto-escondido"> 
+                    <lable id="lable-final" class="lable-msg" id="'lable-final">Resultado: </lable>
+                    <input id="msg-result" class="msg" placeholder="Resultado">
+                </section>
+                
+
+            </div>
+
+        </div>
+        
+
+    </main>
+   
+
+
+    <script src="script.js"></script>
+</body>
+</html>
